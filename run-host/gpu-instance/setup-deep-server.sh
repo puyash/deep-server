@@ -63,6 +63,6 @@ dpkg -i /tmp/nvidia-docker*.deb && rm /tmp/nvidia-docker*.deb
 # finish up --------------------------------
 # ------------------------------------------
 
-mkdir /projects
+mkdir $HOME/projects
 
 echo "Run: sudo nvidia-docker run --rm nvidia/cuda nvidia-smi"

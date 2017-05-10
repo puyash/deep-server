@@ -21,6 +21,7 @@ RUN pip3 install --upgrade pip
 
 
 # tensorflow and keras
+RUN pip3 install gensim
 RUN pip3 install tensorflow-gpu
 RUN pip3 install keras --no-deps
 
@@ -48,7 +49,7 @@ EXPOSE 8888 6006
 
 # run app
 ENTRYPOINT ["tini", "--"]
-CMD ["jupyter", "notebook", "--no-browser", "--allow-root"]
+CMD ["jupyter", "notebook", "--no-browser"]
 
 
 
