@@ -16,12 +16,9 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
 ENV PATH /opt/conda/bin:$PATH
 
 
-# install pip and 
+# install pip 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install \ 
-    gensim \
-    nltk
 
 # tensorflow and keras
 RUN pip3 install tensorflow-gpu
