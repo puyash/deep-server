@@ -86,8 +86,9 @@ gcloud compute ssh --ssh-flag "-L $LOCAL_PORT:localhost:8888" $@
 Then open up your browser and browse localhost:8889 to access your environment.
 
 
+##### References
 
-
+I have followed the steps outlined in https://medium.com/google-cloud/containerized-jupyter-notebooks-on-gpu-on-google-cloud-8e86ef7f31e9, but with the scripts more or less re-written. 
 
 
 
