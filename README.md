@@ -2,7 +2,7 @@
 
 
 
-This is for demo purposes (and private use) only.
+This is for demo purposes only.
 
 * Setup a GPU-enabled Google cloud instance.
 * Install docker and NVIDIA dependencies.
@@ -68,7 +68,7 @@ sudo nvidia-docker run -it -d --restart=always -v $HOME/projects:/projects -p 88
 
 ## 4 Try it out
 
-With everything setup. Run `sh start-notebook.sh deep-server-1` to:
+With everything set up, run `sh start-notebook.sh deep-server-1` to:
 
 1. Start server if shut down.
 2. Setup an ssh tunnel to your server.
