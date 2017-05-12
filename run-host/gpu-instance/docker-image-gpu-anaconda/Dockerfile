@@ -15,20 +15,11 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
 
 ENV PATH /opt/conda/bin:$PATH
 
+# Tensorflow and Keras
+conda install -c anaconda gensim=1.0.1
+conda install -c anaconda tensorflow-gpu=1.1.0
+conda install -c conda-forge keras=2.0.2
 
-# conda install -c anaconda gensim=1.0.1
-# conda install -c anaconda tensorflow-gpu=1.1.0
-# conda install -c conda-forge keras=2.0.2
-
-
-# install pip 
-RUN pip3 install --upgrade pip
-
-
-# tensorflow and keras
-RUN pip3 install gensim
-RUN pip3 install tensorflow-gpu
-RUN pip3 install keras --no-deps
 
 
 # Install Tini 
