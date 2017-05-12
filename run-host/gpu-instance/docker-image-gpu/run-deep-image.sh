@@ -1,4 +1,12 @@
 
+# check if container is already running and remove
+if sudo docker inspect -f {{.State.Running}} deep-container; then
+    sudo docker stop  deep-container && sudo docker rm deep-container
+else 
+    if sudo docker inspect -f !{{.State.Running}} deep-container; then
+        sudo docker rm deep-container 
+    fi
+fi
 
 sudo docker build -t "deep-image" .
 echo "image built.. proceeding to run container.."
